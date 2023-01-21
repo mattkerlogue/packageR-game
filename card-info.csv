@@ -1,0 +1,27 @@
+﻿card_id,card_group,card_type,title,description,action,icon,code_value,error_value
+m101,metadata,description,DESCRIPTION,"The description file explains the package, licencing, contact information and dependencies.",NA,description,NA,NA
+m201,metadata,namespace,NAMESPACE,"The namespace lists the functions exported by the package, and imports from dependencies.",NA,namespace,NA,NA
+m301,metadata,license,LICENSE (MIT),"Licenses set out how others can use the package, the MIT Licence is a ""permissive"" licence.",NA,license_mit,NA,NA
+m302,metadata,license,LICENSE (GPL),"Licenses set out how others can use the package, the GPL is a ""copyleft"" licence.",NA,license_gpl,NA,NA
+m303,metadata,license,LICENSE (CC0),"Licenses set out how others can use the package, the CC0 is a ""public domain"" licence.",NA,license_cc0,NA,NA
+s101,script,script,function.R,"An R script contains your package code, for example a single function.",Discard 10 units of code from your package,script,NA,NA
+s102,script,script,family.R,"An R script contains your package code, for example a family of related functions.",Discard 10 units of code from your package,script,NA,NA
+s103,script,script,utils.R,"An R script contains your package code, for example ""internal"" utility functions.",Discard 10 units of code from your package,script,NA,NA
+c101,coding,code,R function,Functions are the building blocks of R packages.,NA,code,1,NA
+c102,coding,code,R function,Functions are the building blocks of R packages.,NA,code,2,NA
+c103,coding,code,R function,Functions are the building blocks of R packages.,NA,code,3,NA
+c201,coding,error,Minor error,Oh dear! Your code doesn't work as expected,NA,minor_error,NA,1
+c202,coding,error,Major error,Oh dear! Your code doesn't work as expected,NA,major_error,NA,3
+c203,coding,error,Fatal error,Oh dear! Your code doesn't work as expected,Discard 1 code card each turn until this error is fixed,fatal_error,NA,5
+c301,coding,dependency,Imports,Dependencies allow you to use code in other packages. Imports must be installed for your package to run.,NA,imports,NA,NA
+c302,coding,dependency,Imports,Dependencies allow you to use code in other packages. Imports must be installed for your package to run.,Discard 1 code card from your package,imports,1,NA
+c303,coding,dependency,Suggests,Dependencies allow you to use code in other packages. Suggested packages don't need to be installed for your package to run.,NA,suggests,NA,1
+c401,coding,documentation,Function help,Documentation helps end users understand how to your package.,NA,help,NA,NA
+c402,coding,documentation,Vignette,Vignettes provide long-form guides to using aspects of your package.,NA,vignette,NA,NA
+c501,coding,debug,Debug minor error,"Fixing an error is often called ""debugging""",Discard error(s) up to a value of 1 from your package (and this card),debug_minor,NA,-1
+c502,coding,debug,Debug major error,"Fixing an error is often called ""debugging""",Discard error(s) up to a value of 3 from your package (and this card),debug_major,NA,-3
+c601,coding,test,Write tests,Using unit tests can help you detect errors more easily,Discard error(s) up to a value of 1 from your package (one time only),test,NA,-1
+c602,coding,test,Write tests,Using unit tests can help you detect errors more easily,Discard error(s) up to a value of 3 from your package (one time only),test,NA,-3
+c701,coding,collaborate,Collaborate on code,Collaboration can help you develop your package more quickly,Use this card in place of 5 code cards (discard after use),collaborate,5,NA
+c702,coding,collaborate,Collaborate on fixing,Collaboration can help you develop your package more quickly,Discard error(s) up to a value of 5 from your package (discard after use),collaborate,NA,-5
+c703,coding,collaborate,Collaborate on documentation,Collaboration can help you develop your package more quickly,Use this card in place of a documentation card,collaborate,NA,NA

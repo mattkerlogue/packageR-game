@@ -1,0 +1,23 @@
+layout:
+  size: A4
+  orientation: landscape
+fonts:
+  headings:
+    name: Space Grotesk
+    google: TRUE
+    base_format: sans-serif
+    size: 24
+    weight: 600
+    colour: "#0F36C7"
+  body:
+    name: IBM Plex Mono
+    google: TRUE
+    base_format: mono
+    size: 10
+    weight: 200
+    colour: "#0C0C0C"
+colours:
+  primary: "#0F36C7"
+  accents: ["#40ADFE", "#FFEC1C", "#8AC755", "#FF144C"]
+  light_grey: "#CCCCCC"
+  dark_grey: "#666666"

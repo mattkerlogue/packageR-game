@@ -1,6 +1,6 @@
 # The `{packageR}` game
 
-![](imgs/packageR_logo.svg)
+![](imgs/png/packageR_logo.png)
 
 `{packageR}` is a card game based on making a package for the R software language.
 
@@ -48,7 +48,7 @@ The game deck is made up of 128 cards from 11 different types of card.
 
 ### DESCRIPTION
 
-![](imgs/description.svg)
+![](imgs/png/description.png)
 
 Every package requires a `DESCRIPTION` file that provides general metadata about your package such as its name, its purpose, the author(s), and dependencies.
 
@@ -58,7 +58,7 @@ If you pick up extra `DESCRIPTION` cards discard them immediately.
 
 ### NAMESPACE
 
-![](imgs/namespace.svg)
+![](imgs/png/namespace.png)
 
 Alongside the `DESCRIPTION`, the `NAMESPACE` is an important metadata file. The `NAMESPACE` file tells R which functions from the package are made available to end users. It also includes which functions from other packages need to be loaded in order for you package to run.
 
@@ -68,7 +68,7 @@ If you pick up extra `NAMESPACE` cards discard them immediately.
 
 ### LICENSE
 
-![](imgs/license_mit.svg) ![](imgs/license_gpl.svg) ![](imgs/license_cc0.svg)
+![](imgs/png/license_mit.png) ![](imgs/png/license_gpl.png) ![](imgs/png/license_cc0.png)
 
 In order to share your package with others you must apply a `LICENSE`, which sets out the copyright provisions and the rights and responsibilities of other users, especially developers. Typically R code is licensed using either the MIT Licence or the GPLv3 Licence. If you are publishing a data package then you may want to use a public domain license such as CC0.
 
@@ -78,7 +78,7 @@ If you pick up extra `LICENSE` cards discard them immediately.
 
 ### Script
 
-![](imgs/script.svg)
+![](imgs/png/script.png)
 
 R scripts are where the code for the functions of your package are stored. Sometimes scripts contain a single function (`function.R`), a family of related functions (`family.R`), or they contain helpful utility/helper functions used by your main functions (`utils.R`).
 
@@ -88,7 +88,7 @@ Script cards are not included in the build pile, instead you must earn them by d
 
 ### Code
 
-![](imgs/code.svg)
+![](imgs/png/code.png)
 
 These cards represent the coding you do to create a package. Each card has either 1, 3 or 5 units of code associated with it. When you have cards totalling 10 or more units of code you can exchange them for an R script card.
 
@@ -96,7 +96,7 @@ When you exchange your code cards for an R script card the code cards are added 
 
 ### Error
 
-![](imgs/minor_error.svg) ![](imgs/major_error.svg) ![](imgs/fatal_error.svg)
+![](imgs/png/minor_error.png) ![](imgs/png/major_error.png) ![](imgs/png/fatal_error.png)
 
 When writing code you will inevitably encounter errors. In the `{packageR}` game there are three levels of error with an associated error value: a minor error (1), a major error (3), and a fatal error (5).
 
@@ -108,7 +108,7 @@ When you pick up a fatal error card you must discard one of your code cards imme
 
 ### Dependencies
 
-![](imgs/imports.svg) ![](imgs/suggests.svg)
+![](imgs/png/imports.png) ![](imgs/png/suggests.png)
 
 Dependencies are other R packages that your package relies on. This can make development easier, so that you don't have to develop your own methods for example (such as charting or regression modelling). If another package is necessary for your package to run it is listed as one of the "imports". If another package provides features that are "nice to have" but are not essential then you can list them as one of the "suggests" packages.
 
@@ -123,7 +123,7 @@ You solve dependency errors in the same way as solving the regular error cards, 
 
 ### Documentation
 
-![](imgs/help.svg) ![](imgs/vignette.svg)
+![](imgs/png/help.png) ![](imgs/png/vignette.png)
 
 Documentation is essential to help end-users know how to use your package successfully. There are two types of documentation: function help and vignettes. Function help files explain how to use a specific function/set of functions, they outline the specific arguments, the returned value and specific guidance on usage. Vignettes are longer articles that describe things such as workflow or specific use cases.
 
@@ -131,7 +131,7 @@ Documentation is essential to help end-users know how to use your package succes
 
 ### Debug
 
-![](imgs/debug_minor.svg) ![](imgs/debug_major.svg)
+![](imgs/png/debug_minor.png) ![](imgs/png/debug_major.png)
 
 The main way you solve errors is through debugging. You can use the debug cards to remove errors from your package. They have a negative error value, showing you how much error each card can fix.
 
@@ -139,7 +139,7 @@ When you use a debug card to fix error(s) you must also discard the debug cards.
 
 ### Test
 
-![](imgs/test.svg)
+![](imgs/png/test.png)
 
 Another strategy for solving/protecting against error is to write test scripts. These are run as part of the development process to check that you have not introduced unexpected errors across your package. As with debug they have a negative error value, showing you how much error each card can fix.
 
@@ -147,7 +147,7 @@ Test scripts remain in your package, but can only be used once to debug errors f
 
 ### Collaborate
 
-![](imgs/collaborate.svg)
+![](imgs/png/collaborate.png)
 
 Collaborating with others in package development can provide significant benefits. There are three types of collaboration code:
 

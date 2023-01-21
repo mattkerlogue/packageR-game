@@ -39,7 +39,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/description.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/description.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/description.png", device = "png", width = 600, height = 600, units = "px")
 
 # namespace ----
 ggplot() +
@@ -56,7 +57,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/namespace.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/namespace.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/namespace.png", device = "png", width = 600, height = 600, units = "px")
 
 # license_mit ----
 ggplot() +
@@ -73,7 +75,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/license_mit.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/license_mit.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/license_mit.png", device = "png", width = 600, height = 600, units = "px")
 
 # license_gpl ----
 ggplot() +
@@ -90,7 +93,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/license_gpl.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/license_gpl.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/license_gpl.png", device = "png", width = 600, height = 600, units = "px")
 
 # license_cc0 ----
 ggplot() +
@@ -107,8 +111,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/license_cc0.svg", device = "svg", width = 600, height = 600, units = "px")
-
+ggsave("imgs/svg/license_cc0.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/license_cc0.png", device = "png", width = 600, height = 600, units = "px")
 
 # script ----
 ggplot() +
@@ -125,7 +129,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/script.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/script.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/script.png", device = "png", width = 600, height = 600, units = "px")
 
 # code ----
 ggplot() +
@@ -142,8 +147,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/code.svg", device = "svg", width = 600, height = 600, units = "px")
-
+ggsave("imgs/svg/code.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/code.png", device = "png", width = 600, height = 600, units = "px")
 
 # minor_error ----
 ggplot() +
@@ -160,7 +165,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/minor_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/minor_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/minor_error.png", device = "png", width = 600, height = 600, units = "px")
 
 # major_error ----
 ggplot() +
@@ -177,7 +183,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/major_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/major_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/major_error.png", device = "png", width = 600, height = 600, units = "px")
 
 # fatal_error ----
 ggplot() +
@@ -194,7 +201,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/fatal_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/fatal_error.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/fatal_error.png", device = "png", width = 600, height = 600, units = "px")
 
 # imports ----
 ggplot() +
@@ -215,7 +223,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/imports.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/imports.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/imports.png", device = "png", width = 600, height = 600, units = "px")
 
 # suggests ----
 ggplot() +
@@ -236,8 +245,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/suggests.svg", device = "svg", width = 600, height = 600, units = "px")
-
+ggsave("imgs/svg/suggests.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/suggests.png", device = "png", width = 600, height = 600, units = "px")
 
 # help ----
 ggplot() +
@@ -254,7 +263,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/help.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/help.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/help.png", device = "png", width = 600, height = 600, units = "px")
 
 # vignette ----
 ggplot() +
@@ -276,8 +286,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/vignette.svg", device = "svg", width = 600, height = 600, units = "px")
-
+ggsave("imgs/svg/vignette.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/vignette.png", device = "png", width = 600, height = 600, units = "px")
 
 # debug_minor ----
 ggplot() +
@@ -294,7 +304,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/debug_minor.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/debug_minor.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/debug_minor.png", device = "png", width = 600, height = 600, units = "px")
 
 # debug_major ----
 ggplot() +
@@ -311,7 +322,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/debug_major.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/debug_major.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/debug_major.png", device = "png", width = 600, height = 600, units = "px")
 
 # test ----
 ggplot() +
@@ -328,7 +340,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/test.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/test.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/test.png", device = "png", width = 600, height = 600, units = "px")
 
 # collaborate ----
 
@@ -390,8 +403,8 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/collaborate.svg", device = "svg", width = 600, height = 600, units = "px")
-
+ggsave("imgs/svg/collaborate.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/collaborate.png", device = "png", width = 600, height = 600, units = "px")
 
 # game logo ----
 
@@ -433,11 +446,6 @@ box_lines <- tibble::tribble(
 )
 
 ggplot() +
-  # geom_polygon(
-  #   data = hex_big, aes(x = x, y = y, group = group),
-  #   colour = NA,
-  #   fill = "#EEEEEE"
-  # ) +
   geom_segment(
     data = box_lines, aes(x = x, xend = xend, y = y, yend = yend, group = group),
     linetype = "12", size = 0.5
@@ -446,11 +454,6 @@ ggplot() +
     data = box_edges, aes(x = x, xend = xend, y = y, yend = yend, group = group),
     linetype = "42", colour = "#0F36C7", size = 1
   ) +
-  # geom_polygon(
-  #   data = box_shapes, aes(x = x, y = y, group = group),
-  #   fill = "#FFFFFF",
-  #   colour = NA, size = 1
-  # ) +
   geom_polygon(
     data = box_shapes, aes(x = x, y = y, group = group, fill = as.character(group)),
     colour = "#0F36C7", size = 1, show.legend = FALSE
@@ -459,11 +462,6 @@ ggplot() +
     geom = "text", x = 0, y = -5, label = "packageR",
     size = 8, family = "Space Grotesk", colour = "#0F36C7", fontface = "bold"
   ) +
-  # geom_polygon(
-  #   data = hex_big, aes(x = x, y = y, group = group),
-  #   colour = "#0F36C7", size = 2,
-  #   fill = NA
-  # ) +
   scale_fill_manual(
     values = c("1" = "#0F36C733", "2" = "#0F36C744", "3" = "#0F36C766")
   ) +
@@ -472,4 +470,5 @@ ggplot() +
   coord_fixed() +
   theme_void()
 
-ggsave("imgs/packageR_logo.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/svg/packageR_logo.svg", device = "svg", width = 600, height = 600, units = "px")
+ggsave("imgs/png/packageR_logo.png", device = "png", width = 600, height = 600, units = "px")

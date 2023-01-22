@@ -16,7 +16,7 @@ card_maker <- function(card_id, card_data = card_data) {
       tags$tbody(
         tags$tr(
           tags$td(
-            includeHTML(paste0("imgs/", card_info$icon, ".svg")),
+            includeHTML(paste0("imgs/svg/", card_info$icon, ".svg")),
             class="logo",
             colspan = 2
           )
@@ -72,7 +72,7 @@ card_back <- function() {
       tags$tbody(
         tags$tr(
           tags$td(
-            includeHTML("imgs/packageR_logo.svg"),
+            includeHTML("imgs/svg/packageR_logo.svg"),
             class="game_logo"
           )
         )
@@ -80,4 +80,26 @@ card_back <- function() {
     )
   )
   
+}
+
+insert_icon <- function(icon, class = "card_icon") {
+  
+  if (length(icon) == 1) {
+    tags$div(
+      includeHTML(paste0("imgs/svg/", icon, ".svg")),
+      class = class
+    )
+  } else {
+    tags$div(
+      purrr::map(
+        icon,
+        ~tags$div(
+          includeHTML(paste0("imgs/svg/", .x, ".svg")),
+          class = class
+        )
+      ),
+      class = "icon_container"
+    )
+  }
+
 }

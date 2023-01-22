@@ -14,7 +14,7 @@ source("card_maker.R")
 <!-- NEW PAGE -->
 ::::{.grid-page}
 
-:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6}
+:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6 }
 ```{r}
 card_back()
 ```

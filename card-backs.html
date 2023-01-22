@@ -32413,26 +32413,31 @@ h1, h2, h3, h4, h5, h6 {
 font-family: 'Space Grotesk', sans-serif;
 font-weight: 600;
 color: var(--colour-headings);
-margin: 0px;
-padding: 0px;
 }
 h1 {
 font-size: 24pt;
 }
 h2, h3, h4, h5, h6 {
-font-size: 10pt;
-margin-top: 6pt;
+margin-top: 18pt;
+margin-bottom: 6pt;
 }
-body, p {
-font-family: 'IBM Plex Mono', mono;
+body, p, ul {
+font-family: 'Space Grotesk', sans-serif;
+font-weight: 300;
+font-size: 11pt;
+}
+code {
+font-family: 'IBM Plex Mono', sans-serif;
 font-weight: 200;
-font-size: 10pt;
+}
+strong code {
+font-weight: 700;
 }
 body {
 color: var(--colour-body);
 }
 p {
-margin-bottom: 6pt;
+margin-bottom: 6pt !important;
 }
 .text-primary {
 color: var(--colour-primary);
@@ -32520,9 +32525,30 @@ color: var(--color-accent-4);
 }
 .bg-color-accent-4 {
 background-color: var(--color-accent-4);
+}</style>
+<style type="text/css">:root {
+--pagedjs-margin-left: 10mm !important;
+--pagedjs-margin-right: 10mm !important;
+--pagedjs-margin-top: 10mm !important;
+--pagedjs-margin-bottom: 10mm !important;
 }
-</style>
-<style type="text/css">.card table {
+.grid-page {
+display: grid;
+grid-template-rows: repeat(12, 1fr);
+grid-template-columns: repeat(12, 1fr);
+grid-gap: 20px;
+height: 100%;
+font-size: 10pt;
+break-before: page;
+}
+@media print{
+.grid-page {
+grid-template-rows: repeat(12, 12mm);
+grid-template-columns: repeat(12, 19mm);
+grid-gap: 4mm;
+}
+}
+.card table {
 width: 100%;
 font-family: "Space Grotesk";
 }
@@ -32552,6 +32578,9 @@ border: 1px solid #FF144C;
 }
 table.error th {
 background-color: #FF144C66;
+}
+table.card_back {
+width: 100%;
 }
 tr.remove {
 display: none;
@@ -32585,6 +32614,47 @@ vertical-align: middle;
 table.card_back td.game_logo {
 text-align: center;
 vertical-align: middle;
+}
+.instructions {
+display: block !important;
+column-count: 3;
+column-fill: auto;
+column-gap: 10mm;
+orphans: 2;
+}
+.instructions div.game_logo {
+text-align: center;
+}
+.instructions div {
+display: block !important;
+}
+.instructions p {
+display: block !important;
+}
+.instructions .card_icon {
+display: inline-block !important;
+}
+.instructions .card_icon svg {
+width: 90px;
+height: 90px;
+}
+.instructions .icon_container {
+display: flex !important;
+justify-content: space-evenly;
+}
+.instructions .icon_container .card_icon {
+display: block !important;
+}
+.instructions p:last-of-type {
+margin-bottom: 18pt !important;
+}
+hr {
+height: 0px;
+border: none;
+margin-top: 100pt;
+}
+.margin-top-0 h2, .margin-top-0 h3 {
+margin-top: 0px !important;
 }</style>
 
 </head>

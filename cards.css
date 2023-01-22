@@ -1,3 +1,28 @@
+:root {
+  --pagedjs-margin-left: 10mm !important;
+  --pagedjs-margin-right: 10mm !important;
+  --pagedjs-margin-top: 10mm !important;
+  --pagedjs-margin-bottom: 10mm !important;
+}
+
+.grid-page {
+  display: grid;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+  height: 100%;
+  font-size: 10pt;
+  break-before: page;
+}
+
+@media print{
+  .grid-page {
+    grid-template-rows: repeat(12, 12mm);
+    grid-template-columns: repeat(12, 19mm);
+    grid-gap: 4mm;
+  }
+}
+
 .card table {
   width: 100%;
   font-family: "Space Grotesk";
@@ -37,6 +62,10 @@ table.error {
 
 table.error th {
   background-color: #FF144C66;
+}
+
+table.card_back {
+  width: 100%;
 }
 
 tr.remove {

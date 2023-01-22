@@ -153,6 +153,41 @@ Collaborating with others in package development can provide significant benefit
 - collaborate on fixing: equivalent to fixing errors up to a value of 5
 - collaborate on documentation: can be used in place of a documentation card.
 
+## Production
+
+You can print the cards yourself using the [`card_fronts.pdf`](card_fronts.pdf) and [`card_backs.pdf`](card_backs.pdf) files; `card_fronts.pdf` contains 16 sheets of A4, `card_backs.pdf` contains 1 sheet of A4.
+
+You can print a formatted version of the game instructions this README file is provided at [`game_instructions.pdf`](game_instructions.pdf).
+
+## Development notes
+
+The cards were developed in R using the [`{pagedown}`](http://pagedown.rbind.io) and [`{deckhand2}`](https://github.com/mattkerlogue/deckhand2/) extensions for R Markdown. You will also need the [`{ggplot2}`](http://ggplot2.tidyverse.org), [`{readr}`](http://readr.tidyverse.org), [`{dplyr}`](http://dplyr.tidyverse.org), [`{tibble}`](http://tibble.tidyverse.org) and [`{htmltools}`](https://rstudio.github.io/htmltools/) packages to successfully build the cards from scratch. With the exception of `{deckhand2}` all these packages are available from CRAN.
+
+### Extending the card deck
+The cards and instructions are produced from the relevant R Markdown files ([`card_fronts.Rmd`](card_fronts.Rmd), [`card_backs.Rmd`](card_backs.Rmd) and [`game_instructions.Rmd`](game_instructions.Rmd)). These are laid out using `{deckhand2}`, a CSS grid extension for the paged HTML output produced by `{pagedown}`.
+
+The R Markdown files and associated CSS file ([`cards.css`](cards.css)) control the layout and styling of the cards. Fonts are sourced from Google Fonts, specifically [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) and [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono). Web fonts are used by the R Markdown files, but to produce PNG versions of the logo imagery it is advised to download these fonts to your machine.
+
+The content for card fronts is stored in [`card-info.csv`](card-info.csv), and converted to HTML by the `card_maker()` function. The card backs are produced by the `card_back()` function. These functions are defined in the [`card_maker.R`](card_maker.R) script.
+
+The `card-info.csv` file contains 9 columns:
+
+- `card_id`: a unique id for the card
+- `card_group`: the general grouping of the card, either metadata, script or coding
+- `card_type`: the specific type of card, see the [cards](#cards) section above
+- `title`: the title for the card
+- `description`: a brief explanation of the card, and its role in the package building process
+- `action`: the action (if any) that the player must take
+- `icon`: the image to use for this card
+- `code_value`: the "units of code" value (if any) associated with the card
+- `error_value`: the amount of error (if any) the card causes
+
+The `card_maker()` function takes two arguments `card_id` (relating to the `card_id` column in the CSV file) and `card_data` (a data.frame of the CSV) file.
+
+### Card icons
+
+The icons for the cards are generated from the `{ggplot2}` charts defined in `icons.R` script, these are rendered as SVG and PNG files that are stored in the [`imgs`](imgs/) directory.
+
 ## License
 
 <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>

@@ -114,7 +114,7 @@ table.card_back td.game_logo {
   column-count: 3;
   column-fill: auto;
   column-gap: 10mm;
-  orphans: 2;
+  orphans: 3;
 }
 
 .instructions div.game_logo {
@@ -143,6 +143,10 @@ table.card_back td.game_logo {
   justify-content: space-evenly;
 }
 
+.instructions.balance {
+  column-fill: balance;
+}
+
 .instructions .icon_container .card_icon {
   display: block !important;
 }
@@ -154,9 +158,10 @@ table.card_back td.game_logo {
 hr {
   height: 0px;
   border: none;
-  margin-top: 100pt;
+  margin-top: 200pt;
 }
 
-.margin-top-0 h2, .margin-top-0 h3 {
+.margin-top-0 h2, .margin-top-0 h3, .margin-top-0 h4 {
   margin-top: 0px !important;
 }
+

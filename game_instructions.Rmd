@@ -47,13 +47,13 @@ R script cards can only be earned by exchanging a set of cards that have a combi
 
 During the course of the game, players will acquire cards that have error values associated with them. For your package to build successfully you must either neutralise or remove errors from your package.
 
----
-
 ## Set-up {.margin-top-0}
 
 Each player starts with 2 R function cards (with a value of 1 code units each) and 1 minor error card.
 
 The R script cards are placed in a separate pile. All remaining cards are shuffled and placed in the "build" pile.
+
+---
 
 ## Game play
 
@@ -97,13 +97,13 @@ insert_icon("namespace")
 
 Alongside the `DESCRIPTION`, the `NAMESPACE` is an important metadata file. The `NAMESPACE` file tells R which functions from the package are made available to end users. It also includes which functions from other packages need to be loaded in order for you package to run.
 
----
-
 **You must have a `NAMESPACE` card in your package for it to build successfully.**
 
 If you pick up extra `NAMESPACE` cards discard them immediately.
 
-### LICENSE
+---
+
+### LICENSE {.margin-top-0}
 
 ```{r}
 insert_icon(c("license_mit", "license_gpl", "license_cc0"))
@@ -114,10 +114,6 @@ In order to share your package with others you must apply a `LICENSE`, which set
 **You must have a `LICENSE` card in your package for it to build successfully.**
 
 If you pick up extra `LICENSE` cards discard them immediately.
-
----
-
----
 
 ### Script {.margin-top-0}
 
@@ -130,16 +126,8 @@ R scripts are where the code for the functions of your package are stored. Somet
 Script cards are not included in the build pile, instead you must earn them by developing R functions. When you have cards totalling 10 or more units of code you can exchange them for an R script card.
 
 **You must have 3 script cards in your package for it to build successfully.**
-:::
 
-::::
-
-<!-- NEW PAGE -->
-::::{.grid-page}
-
-:::{.start-col-1 .end-col-12 .start-row-1 .end-row-12 .instructions}
-
-### Code {.margin-top-0}
+### Code
 
 ```{r}
 insert_icon("code")
@@ -149,7 +137,17 @@ These cards represent the coding you do to create a package. Each card has eithe
 
 When you exchange your code cards for an R script card the code cards are added to the discard pile.
 
-### Error
+
+:::
+
+::::
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-12 .start-row-1 .end-row-12 .instructions}
+
+### Error {.margin-top-0}
 
 ```{r}
 insert_icon(c("minor_error", "major_error", "fatal_error"))
@@ -177,14 +175,8 @@ Dependency management can be problematic though, as a result the suggests cards 
 
 #### Fixing dependency errors
 You solve dependency errors in the same way as solving the regular error cards, by using either the debug, test or collaborate cards. If you use a debug card you must discard the dependencies. If you use a test or collaborate card you can keep the dependencies in your package.
-:::
 
-::::
-
-<!-- NEW PAGE -->
-::::{.grid-page}
-
-:::{.start-col-1 .end-col-12 .start-row-1 .end-row-12 .instructions}
+---
 
 ### Documentation {.margin-top-0}
 
@@ -206,7 +198,16 @@ The main way you solve errors is through debugging. You can use the debug cards 
 
 When you use a debug card to fix error(s) you must also discard the debug cards.
 
-### Test
+:::
+
+::::
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-12 .start-row-1 .end-row-12 .instructions .balance}
+
+### Test {.margin-top-0}
 
 ```{r}
 insert_icon("test")

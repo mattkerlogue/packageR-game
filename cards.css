@@ -79,3 +79,55 @@ table.card_back td.game_logo {
   text-align: center;
   vertical-align: middle;
 }
+
+.instructions {
+  display: block !important;
+  column-count: 3;
+  column-fill: auto;
+  column-gap: 10mm;
+  orphans: 2;
+}
+
+.instructions div.game_logo {
+  text-align: center;
+}
+
+.instructions div {
+  display: block !important;
+}
+
+.instructions p {
+  display: block !important;
+}
+
+.instructions .card_icon {
+  display: inline-block !important;
+}
+
+.instructions .card_icon svg {
+  width: 90px;
+  height: 90px;
+}
+
+.instructions .icon_container {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.instructions .icon_container .card_icon {
+  display: block !important;
+}
+
+.instructions p:last-of-type {
+  margin-bottom: 18pt !important;
+}
+
+hr {
+  height: 0px;
+  border: none;
+  margin-top: 100pt;
+}
+
+.margin-top-0 h2, .margin-top-0 h3 {
+  margin-top: 0px !important;
+}

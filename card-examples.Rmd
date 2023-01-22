@@ -1,0 +1,202 @@
+---
+pagetitle: "packageR (card examples)"
+output: 
+  deckhand2::deckhand:
+    page_size: "A4 landscape"
+    css: ["_deckhand.css", "cards.css"]
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+source("card_maker.R")
+card_data <- readr::read_csv("card-info.csv")
+```
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6 .card .draft}
+```{r}
+card_back()
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("m101", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("m201", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("m301", card_data)
+```
+:::
+
+:::{.start-col-1 .end-col-3 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("m302", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("m303", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("s101", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("s102", card_data)
+```
+:::
+
+::::
+
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("s103", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c101", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c102", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c103", card_data)
+```
+:::
+
+:::{.start-col-1 .end-col-3 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c201", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c202", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c203", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c301", card_data)
+```
+:::
+
+::::
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c302", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c303", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c401", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c402", card_data)
+```
+:::
+
+:::{.start-col-1 .end-col-3 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c501", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c502", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c601", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-7 .end-row-12 .card}
+```{r}
+card_maker("c602", card_data)
+```
+:::
+
+::::
+
+<!-- NEW PAGE -->
+::::{.grid-page}
+
+:::{.start-col-1 .end-col-3 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c701", card_data)
+```
+:::
+
+:::{.start-col-4 .end-col-6 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c702", card_data)
+```
+:::
+
+:::{.start-col-7 .end-col-9 .start-row-1 .end-row-6 .card}
+```{r}
+card_maker("c703", card_data)
+```
+:::
+
+:::{.start-col-10 .end-col-12 .start-row-1 .end-row-6 .card .draft}
+```{r}
+card_back()
+```
+:::
+
+::::
